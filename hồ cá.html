@@ -1,31 +1,15 @@
-<!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hồ Cá Mini</title>
-  <link rel="stylesheet" href="mystyle.css">
+<meta charset="UTF-8" />
+<title>Hồ cá vui nhộn</title>
+<link rel="stylesheet" href="mystyle.css" />
 </head>
-<body class="fish-page">
-
-  <a href="index.html" class="back">⬅ Quay lại Trang chính</a>
-
-  <!-- Hình ảnh cá -->
-  <img src="img/fish1.png" alt="Cá 1" class="fish swim1">
-  <img src="img/fish2.png" alt="Cá 2" class="fish swim2">
-
-  <script>
-    // Tạo bong bóng nổi ngẫu nhiên
-    function createBubble() {
-      const bubble = document.createElement('div');
-      bubble.classList.add('bubble');
-      bubble.style.left = Math.random() * window.innerWidth + 'px';
-      bubble.style.animationDuration = 4 + Math.random() * 4 + 's';
-      document.body.appendChild(bubble);
-      setTimeout(() => bubble.remove(), 8000);
-    }
-    setInterval(createBubble, 600);
-  </script>
-
+<body>
+<div id="content">
+<div id="shark"><img src="images/shark.png" /></div>
+<div id="turtle"><img src="images/turtle.png" /></div>
+<div id="diver1"><img src="images/diver1.png" /></div>
+<div id="diver2"><img src="images/diver2.png" /></div>
+</div>
 </body>
 </html>
